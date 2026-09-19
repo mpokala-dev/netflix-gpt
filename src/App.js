@@ -1,7 +1,11 @@
+import Body from "./components/Body";
+import Header from "./components/Header";
+
 function App() {
   return (
-    <div className="h-screen flex flex-col  text-center justify-center text-lg font-bold text-green-800 underline">
-      Hello Netflixers - Please Login
+    <div>
+      <Header />
+      <Body />
     </div>
   );
 }
