@@ -4,22 +4,19 @@ import Browse from "./Browse";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const Body = () => {
-  const bodyRouter = createBrowserRouter([
-    {
-      path: "/browse",
-      element: <Browse />,
-    },
+  const appRouter = createBrowserRouter([
     {
       path: "/",
       element: <Login />,
     },
+    {
+      path: "/browse",
+      element: <Browse />,
+    },
   ]);
   return (
-    <div className="h-screen flex flex-col text-center justify-center items-center text-lg font-bold text-green-800 underline">
-      <RouterProvider router={bodyRouter}>
-        <Login />
-        <Browse />
-      </RouterProvider>
+    <div className="min-h-screen">
+      <RouterProvider router={appRouter} />
     </div>
   );
 };

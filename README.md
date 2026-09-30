@@ -12,3 +12,20 @@
             <Browse>
 
 - <b>npm i -D react-router-dom</b> to enable routing to the application in App.js.
+
+- Create React App
+- Configured TailwindCSS
+- Header
+- Routing of App
+- Login Form
+- Sign in/up Form
+- Form Validation
+- useRef Hook
+- Firebase Setup - done on console.firebase with project name netflixgpt
+- Deploying our app to production - installed firebase CLI but blocked hosting on free plan
+- Create SignUp User Account - should do using firebase auth
+- Implement Sign In user Api - should do using firebase auth
+- Created Redux Store with userSlice
+- Implemented Sign out
+- Update Profile - yet to implement
+- if the user is not logged in Redirect /browse to Login Page and hide sigout button if user is null
