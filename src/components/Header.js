@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { removeUser } from "../utils/userSlice";
+import { LOGO } from "../utils/constants";
 
 const Header = ({ showSignOut = false }) => {
   const navigate = useNavigate();
@@ -12,11 +13,7 @@ const Header = ({ showSignOut = false }) => {
 
   return (
     <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between bg-gradient-to-b from-black/70 to-transparent px-6 py-5 sm:px-12 sm:py-7">
-      <img
-        className="w-32 sm:w-40"
-        src="https://occ.a.nflxso.net/dnmt/api/v6/iL4oJVDYZ8KLSrJ6eG2OwtghbfQ/AAAAAdEhm1UzVexHjKqFOP9W6E2UVtkWFvL-vdxIEbTU81rsqNuPmDDy_dQvmQ85ath49JBruVV4aGQA3gY2Dl5SiqFf-AEwPAZBTNkW8FMxGXpDN2mHrf8KlRRiddj1P422ZW1eZkZNWLTd.svg"
-        alt="Netflix"
-      />
+      <img className="w-32 sm:w-40" src={LOGO} alt="Netflix" />
       {showSignOut && (
         <button
           type="button"

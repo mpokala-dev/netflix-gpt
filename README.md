@@ -29,3 +29,5 @@
 - Implemented Sign out
 - Update Profile - yet to implement
 - if the user is not logged in Redirect /browse to Login Page and hide sigout button if user is null
+- Unsubscribe to OAuthStateChanged by firebase provider in unmount phase - useEffect(()=>{const unsubscribe = OAuthStateChanged(); return ()=>unsubscribe()},[]) // best practice to remove unneccessary Auth calls on unmount.
+- Constants file

@@ -4,6 +4,7 @@ import { checkValidData } from "../utils/validate";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { LOGIN_COVER } from "../utils/constants";
 
 const Login = () => {
   const [errorMessage, setErrorMessage] = useState(null);
@@ -45,11 +46,7 @@ const Login = () => {
       <Header />
 
       <div className="absolute inset-0" aria-hidden="true">
-        <img
-          className="h-full w-full object-cover"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/4a59f124-030b-417a-9565-8362f395bdb0/web/GB-en-20260914-TRIFECTA-perspective_69186ac8-bdeb-4919-9f99-79eec0026cf8_medium.jpg"
-          alt=""
-        />
+        <img className="h-full w-full object-cover" src={LOGIN_COVER} alt="" />
         <div className="absolute inset-0 bg-black/60" />
       </div>
       <main className="relative z-10 flex min-h-screen items-center justify-center px-6 pb-8 pt-24">
